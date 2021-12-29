@@ -1,0 +1,11 @@
+output   = "internal/models"
+no-tests = true
+
+
+[psql]
+  dbname = "friendmanagement"
+  host   = "127.0.0.1"
+  port   = 5432
+  user   = "friendmanagement"
+  pass   = ""
+  sslmode= "disable"
