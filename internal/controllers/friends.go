@@ -31,7 +31,7 @@ func (_self FriendController) GetUsers(w http.ResponseWriter, r *http.Request) {
 	ctx := context.Background()
 	// Validate body request
 	if r.ContentLength != 0 {
-		//	Respond(w, http.StatusBadRequest, MsgError(errs.ErrBodyRequestInvalid))
+		Respond(w, http.StatusBadRequest, MsgError(errs.ErrBodyRequestInvalid))
 		return
 	}
 
