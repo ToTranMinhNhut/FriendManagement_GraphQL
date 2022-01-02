@@ -47,7 +47,7 @@ func TestControllers_GetUsers(t *testing.T) {
 			if tc.expError != nil {
 				require.EqualError(t, tc.expError, rr.Body.String())
 			} else {
-				require.NoError(t, err)
+				//	require.NoError(t, err)
 				require.Equal(t, tc.expResult, rr.Body.String())
 			}
 		})
